@@ -50,7 +50,7 @@
 
 ###
 
-<p align="left">- 🔭 I’m currently working at **Quest Global**<br><br>- 🌱 I’m currently learning **Golang , Java Algorithms**<br><br>- 📝 I regularly write articles on [https://dev.to/vishnub33527201](https://dev.to/vishnub33527201)<br><br>- 💬 Ask me about **Java**<br><br>- 📫 How to reach me **vishnubkrishna471@gmail.com**</p>
+<p align="left">- 🔭 I’m currently working at **Quest Global**<br><br>- 🌱 I’m currently learning **Golang , Java Algorithms**<br><br>- 📝 I regularly write articles on https://dev.to/vishnub33527201<br><br>- 💬 Ask me about **Java**<br><br>- 📫 How to reach me **vishnubkrishna471@gmail.com**</p>
 
 ###
 
