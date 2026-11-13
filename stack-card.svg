@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="350" viewBox="0 0 920 350">
+<defs>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#060912"/></linearGradient>
+</defs>
+<style>
+text{font-family:Consolas,'SF Mono',Menlo,'DejaVu Sans Mono','Courier New',monospace}
+.lbl{font-size:11px;fill:#38bdf8;letter-spacing:1.5px}
+.sec{font-size:12px;fill:#10b981;letter-spacing:1.5px;font-weight:700}
+.k{font-size:13px;fill:#22d3ee;font-weight:700}
+.v{font-size:14px;fill:#e6edf3}
+.m{font-size:13px;fill:#94a3b8}
+.chip{font-size:13px;fill:#e6edf3;font-weight:600}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes rise{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.live{animation:pulse 1.6s ease-in-out infinite}
+.cur{animation:blink 1s step-end infinite}
+.row{animation:rise .5s ease-out both}
+.pop{animation:pop .45s ease-out both}
+</style>
+<rect x="4" y="4" width="912" height="342" rx="14" fill="url(#bg)" stroke="url(#bd)" stroke-width="1.6"/>
+<circle cx="26" cy="26" r="5" fill="#ff5f57"/>
+<circle cx="42" cy="26" r="5" fill="#febc2e"/>
+<circle cx="58" cy="26" r="5" fill="#28c840"/>
+<text x="460.0" y="30" text-anchor="middle" font-size="12" fill="#94a3b8">vishnu@devos ~ % cat stack.yml<tspan class="cur" fill="#22d3ee"> █</tspan></text>
+<circle class="live" cx="854" cy="26" r="4" fill="#10b981"/><text x="896" y="30" text-anchor="end" font-size="11" fill="#10b981" letter-spacing="1.5">LIVE</text>
+<line x1="4" y1="46" x2="916" y2="46" stroke="#1e293b"/>
+<text class="lbl" x="30" y="70">TECH.STACK</text>
+<rect x="24" y="78" width="872" height="248" rx="10" fill="#050812" stroke="#22d3ee" stroke-opacity=".45"/>
+<g class="row" style="animation-delay:0.20s"><text class="k" x="48" y="117">language:</text></g>
+<g class="pop" style="animation-delay:0.28s"><rect x="220" y="98" width="67" height="28" rx="14" fill="#ED8B00" fill-opacity=".12" stroke="#ED8B00" stroke-opacity=".85"/><circle cx="234" cy="112" r="4" fill="#ED8B00"/><text class="chip" x="244" y="117">Java</text></g>
+<g class="row" style="animation-delay:0.38s"><text class="k" x="48" y="159">frameworks:</text></g>
+<g class="pop" style="animation-delay:0.46s"><rect x="220" y="140" width="124" height="28" rx="14" fill="#6DB33F" fill-opacity=".12" stroke="#6DB33F" stroke-opacity=".85"/><circle cx="234" cy="154" r="4" fill="#6DB33F"/><text class="chip" x="244" y="159">Spring Boot</text></g>
+<g class="pop" style="animation-delay:0.54s"><rect x="356.2" y="140" width="132" height="28" rx="14" fill="#6DB33F" fill-opacity=".12" stroke="#6DB33F" stroke-opacity=".85"/><circle cx="370.2" cy="154" r="4" fill="#6DB33F"/><text class="chip" x="380.2" y="159">Spring Cloud</text></g>
+<g class="pop" style="animation-delay:0.62s"><rect x="500.59999999999997" y="140" width="141" height="28" rx="14" fill="#22d3ee" fill-opacity=".12" stroke="#22d3ee" stroke-opacity=".85"/><circle cx="514.5999999999999" cy="154" r="4" fill="#22d3ee"/><text class="chip" x="524.5999999999999" y="159">Microservices</text></g>
+<g class="row" style="animation-delay:0.72s"><text class="k" x="48" y="201">data:</text></g>
+<g class="pop" style="animation-delay:0.80s"><rect x="220" y="182" width="116" height="28" rx="14" fill="#4169E1" fill-opacity=".12" stroke="#4169E1" stroke-opacity=".85"/><circle cx="234" cy="196" r="4" fill="#4169E1"/><text class="chip" x="244" y="201">PostgreSQL</text></g>
+<g class="pop" style="animation-delay:0.88s"><rect x="348.0" y="182" width="75" height="28" rx="14" fill="#4479A1" fill-opacity=".12" stroke="#4479A1" stroke-opacity=".85"/><circle cx="362.0" cy="196" r="4" fill="#4479A1"/><text class="chip" x="372.0" y="201">MySQL</text></g>
+<g class="row" style="animation-delay:0.98s"><text class="k" x="48" y="243">devops:</text></g>
+<g class="pop" style="animation-delay:1.06s"><rect x="220" y="224" width="83" height="28" rx="14" fill="#2496ED" fill-opacity=".12" stroke="#2496ED" stroke-opacity=".85"/><circle cx="234" cy="238" r="4" fill="#2496ED"/><text class="chip" x="244" y="243">Docker</text></g>
+<g class="pop" style="animation-delay:1.14s"><rect x="315.2" y="224" width="116" height="28" rx="14" fill="#326CE5" fill-opacity=".12" stroke="#326CE5" stroke-opacity=".85"/><circle cx="329.2" cy="238" r="4" fill="#326CE5"/><text class="chip" x="339.2" y="243">Kubernetes</text></g>
+<g class="pop" style="animation-delay:1.22s"><rect x="443.2" y="224" width="59" height="28" rx="14" fill="#FF9900" fill-opacity=".12" stroke="#FF9900" stroke-opacity=".85"/><circle cx="457.2" cy="238" r="4" fill="#FF9900"/><text class="chip" x="467.2" y="243">AWS</text></g>
+<g class="pop" style="animation-delay:1.30s"><rect x="513.8" y="224" width="75" height="28" rx="14" fill="#FCC624" fill-opacity=".12" stroke="#FCC624" stroke-opacity=".85"/><circle cx="527.8" cy="238" r="4" fill="#FCC624"/><text class="chip" x="537.8" y="243">Linux</text></g>
+<g class="row" style="animation-delay:1.40s"><text class="k" x="48" y="285">observability:</text></g>
+<g class="pop" style="animation-delay:1.48s"><rect x="220" y="266" width="116" height="28" rx="14" fill="#E6522C" fill-opacity=".12" stroke="#E6522C" stroke-opacity=".85"/><circle cx="234" cy="280" r="4" fill="#E6522C"/><text class="chip" x="244" y="285">Prometheus</text></g>
+</svg>

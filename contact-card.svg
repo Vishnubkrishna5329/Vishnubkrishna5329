@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="278" viewBox="0 0 920 278">
+<defs>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#060912"/></linearGradient>
+</defs>
+<style>
+text{font-family:Consolas,'SF Mono',Menlo,'DejaVu Sans Mono','Courier New',monospace}
+.lbl{font-size:11px;fill:#38bdf8;letter-spacing:1.5px}
+.sec{font-size:12px;fill:#10b981;letter-spacing:1.5px;font-weight:700}
+.k{font-size:13px;fill:#22d3ee;font-weight:700}
+.v{font-size:14px;fill:#e6edf3}
+.m{font-size:13px;fill:#94a3b8}
+.chip{font-size:13px;fill:#e6edf3;font-weight:600}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes rise{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.live{animation:pulse 1.6s ease-in-out infinite}
+.cur{animation:blink 1s step-end infinite}
+.row{animation:rise .5s ease-out both}
+.pop{animation:pop .45s ease-out both}
+</style>
+<rect x="4" y="4" width="912" height="270" rx="14" fill="url(#bg)" stroke="url(#bd)" stroke-width="1.6"/>
+<circle cx="26" cy="26" r="5" fill="#ff5f57"/>
+<circle cx="42" cy="26" r="5" fill="#febc2e"/>
+<circle cx="58" cy="26" r="5" fill="#28c840"/>
+<text x="460.0" y="30" text-anchor="middle" font-size="12" fill="#94a3b8">vishnu@devos ~ % ./connect.sh<tspan class="cur" fill="#22d3ee"> █</tspan></text>
+<circle class="live" cx="854" cy="26" r="4" fill="#10b981"/><text x="896" y="30" text-anchor="end" font-size="11" fill="#10b981" letter-spacing="1.5">LIVE</text>
+<line x1="4" y1="46" x2="916" y2="46" stroke="#1e293b"/>
+<text class="lbl" x="30" y="70">CONTACT</text>
+<rect x="24" y="78" width="872" height="176" rx="10" fill="#050812" stroke="#22d3ee" stroke-opacity=".45"/>
+<g class="row" style="animation-delay:.2s"><text class="sec" x="48" y="112">CONNECT</text></g>
+<g class="row" style="animation-delay:0.35s"><text class="k" x="48" y="144">github</text><text class="m" x="150" y="144">→</text><text class="v" x="176" y="144">github.com/Vishnubkrishna5329</text></g>
+<g class="row" style="animation-delay:0.50s"><text class="k" x="48" y="172">dev.to</text><text class="m" x="150" y="172">→</text><text class="v" x="176" y="172">dev.to/vishnub33527201</text></g>
+<g class="row" style="animation-delay:0.65s"><text class="k" x="48" y="200">email</text><text class="m" x="150" y="200">→</text><text class="v" x="176" y="200">vishnubkrishna471@gmail.com</text></g>
+<g class="row" style="animation-delay:1s"><text class="m" x="48" y="238"><tspan fill="#10b981">vishnu@devos</tspan> ~ % echo "Thanks for visiting — ask me about Java &amp; Spring Boot!"<tspan class="cur" fill="#22d3ee"> █</tspan></text></g>
+</svg>
