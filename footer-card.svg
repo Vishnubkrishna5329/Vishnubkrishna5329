@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="110" viewBox="0 0 920 110">
+<defs>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity=".55"/><stop offset=".5" stop-color="#22d3ee" stop-opacity=".25"/><stop offset="1" stop-color="#a855f7" stop-opacity=".45"/></linearGradient>
+<radialGradient id="gb"><stop offset="0" stop-color="#3b82f6" stop-opacity=".55"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+<radialGradient id="gg"><stop offset="0" stop-color="#10b981" stop-opacity=".35"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+<radialGradient id="gp"><stop offset="0" stop-color="#a855f7" stop-opacity=".45"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+<radialGradient id="gt"><stop offset="0" stop-color="#14b8a6" stop-opacity=".35"/><stop offset="1" stop-color="#14b8a6" stop-opacity="0"/></radialGradient>
+<clipPath id="cc"><rect x="4" y="4" width="912" height="102" rx="18"/></clipPath>
+</defs><style>
+text{font-family:Consolas,'SF Mono',Menlo,'DejaVu Sans Mono','Courier New',monospace}
+.t{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif;font-weight:800;fill:#f1f5f9}
+.sub{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:12px;fill:#64748b}
+.lbl{font-size:11px;fill:#38bdf8;letter-spacing:2px;font-weight:700}
+.sec{font-size:12px;fill:#10b981;letter-spacing:1.5px;font-weight:700}
+.k{font-size:13px;fill:#22d3ee;font-weight:700}
+.v{font-size:14px;fill:#e6edf3}
+.m{font-size:12px;fill:#94a3b8}
+@keyframes drift1{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,20px)}}
+@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-70px,-15px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes on{from{fill-opacity:0}to{fill-opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.b1{animation:drift1 9s ease-in-out infinite}
+.b2{animation:drift2 11s ease-in-out infinite}
+.live{animation:pulse 1.6s ease-in-out infinite}
+.cur{animation:blink 1s step-end infinite}
+.ch{animation:on .01s linear both}
+.rise{animation:rise .6s ease-out both}
+</style>
+<rect x="4" y="4" width="912" height="102" rx="18" fill="#0a0f1c"/>
+<g clip-path="url(#cc)">
+<ellipse class="b1" cx="180" cy="20" rx="260" ry="70" fill="url(#gb)"/>
+<ellipse class="b2" cx="552" cy="33" rx="280" ry="80" fill="url(#gg)"/>
+<ellipse class="b1" cx="414" cy="110" rx="300" ry="50" fill="url(#gp)"/>
+<ellipse class="b2" cx="880" cy="82" rx="180" ry="60" fill="url(#gt)"/>
+</g>
+<rect x="4" y="4" width="912" height="102" rx="18" fill="none" stroke="url(#bd)" stroke-width="1.4"/>
+<rect x="24" y="22" width="872" height="66" rx="14" fill="#060a14" fill-opacity=".55" stroke="#ffffff" stroke-opacity=".06"/>
+<rect x="295.0" y="36" width="330" height="38" rx="19" fill="#0b1220" stroke="#38bdf8" stroke-opacity=".35"/>
+<circle class="live" cx="317.0" cy="55" r="5" fill="#10b981"/>
+<text x="333.0" y="51" font-size="10" fill="#64748b" letter-spacing="1.5">STATUS</text><text x="333.0" y="66" font-size="12" font-weight="700" fill="#e2e8f0">online · thanks for visiting</text>
+</svg>

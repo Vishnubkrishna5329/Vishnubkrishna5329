@@ -1,39 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="340" viewBox="0 0 920 340">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="474" viewBox="0 0 920 474">
 <defs>
-<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#10b981"/></linearGradient>
-<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#060912"/></linearGradient>
-</defs>
-<style>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity=".55"/><stop offset=".5" stop-color="#22d3ee" stop-opacity=".25"/><stop offset="1" stop-color="#a855f7" stop-opacity=".45"/></linearGradient>
+<radialGradient id="gb"><stop offset="0" stop-color="#3b82f6" stop-opacity=".55"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+<radialGradient id="gg"><stop offset="0" stop-color="#10b981" stop-opacity=".35"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+<radialGradient id="gp"><stop offset="0" stop-color="#a855f7" stop-opacity=".45"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+<radialGradient id="gt"><stop offset="0" stop-color="#14b8a6" stop-opacity=".35"/><stop offset="1" stop-color="#14b8a6" stop-opacity="0"/></radialGradient>
+<clipPath id="cc"><rect x="4" y="4" width="912" height="466" rx="18"/></clipPath>
+</defs><style>
 text{font-family:Consolas,'SF Mono',Menlo,'DejaVu Sans Mono','Courier New',monospace}
-.lbl{font-size:11px;fill:#38bdf8;letter-spacing:1.5px}
+.t{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif;font-weight:800;fill:#f1f5f9}
+.sub{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:12px;fill:#64748b}
+.lbl{font-size:11px;fill:#38bdf8;letter-spacing:2px;font-weight:700}
 .sec{font-size:12px;fill:#10b981;letter-spacing:1.5px;font-weight:700}
 .k{font-size:13px;fill:#22d3ee;font-weight:700}
 .v{font-size:14px;fill:#e6edf3}
-.m{font-size:13px;fill:#94a3b8}
-.chip{font-size:13px;fill:#e6edf3;font-weight:600}
+.m{font-size:12px;fill:#94a3b8}
+@keyframes drift1{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,20px)}}
+@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-70px,-15px)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes rise{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}
-@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes on{from{fill-opacity:0}to{fill-opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.b1{animation:drift1 9s ease-in-out infinite}
+.b2{animation:drift2 11s ease-in-out infinite}
 .live{animation:pulse 1.6s ease-in-out infinite}
 .cur{animation:blink 1s step-end infinite}
-.row{animation:rise .5s ease-out both}
-.pop{animation:pop .45s ease-out both}
-</style>
-<rect x="4" y="4" width="912" height="332" rx="14" fill="url(#bg)" stroke="url(#bd)" stroke-width="1.6"/>
-<circle cx="26" cy="26" r="5" fill="#ff5f57"/>
-<circle cx="42" cy="26" r="5" fill="#febc2e"/>
-<circle cx="58" cy="26" r="5" fill="#28c840"/>
-<text x="460.0" y="30" text-anchor="middle" font-size="12" fill="#94a3b8">vishnu@devos ~ % ls ~/repos --backend<tspan class="cur" fill="#22d3ee"> █</tspan></text>
-<circle class="live" cx="854" cy="26" r="4" fill="#10b981"/><text x="896" y="30" text-anchor="end" font-size="11" fill="#10b981" letter-spacing="1.5">LIVE</text>
-<line x1="4" y1="46" x2="916" y2="46" stroke="#1e293b"/>
-<text class="lbl" x="30" y="70">PROJECTS</text>
-<rect x="24" y="78" width="872" height="238" rx="10" fill="#050812" stroke="#22d3ee" stroke-opacity=".45"/>
-<text class="sec" x="48" y="110">NAME</text><text class="sec" x="320" y="110">TYPE</text><text class="sec" x="430" y="110">DESCRIPTION</text>
-<line x1="44" y1="120" x2="876" y2="120" stroke="#1e293b"/>
-<g class="row" style="animation-delay:0.25s"><text class="m" x="48" y="148">❯</text><text class="v" x="66" y="148" font-weight="700">microservices</text><circle cx="326" cy="143" r="5" fill="#ED8B00"/><text class="m" x="338" y="148">Java</text><text class="v" x="430" y="148">Spring Boot microservices</text></g>
-<g class="row" style="animation-delay:0.40s"><text class="m" x="48" y="182">❯</text><text class="v" x="66" y="182" font-weight="700">microservices-config</text><circle cx="326" cy="177" r="5" fill="#6DB33F"/><text class="m" x="338" y="182">Config</text><text class="v" x="430" y="182">Centralized configuration for the microservices</text></g>
-<g class="row" style="animation-delay:0.55s"><text class="m" x="48" y="216">❯</text><text class="v" x="66" y="216" font-weight="700">multiple-datasource</text><circle cx="326" cy="211" r="5" fill="#ED8B00"/><text class="m" x="338" y="216">Java</text><text class="v" x="430" y="216">Spring Boot app with multiple data sources</text></g>
-<g class="row" style="animation-delay:0.70s"><text class="m" x="48" y="250">❯</text><text class="v" x="66" y="250" font-weight="700">Java-Projects</text><circle cx="326" cy="245" r="5" fill="#ED8B00"/><text class="m" x="338" y="250">Java</text><text class="v" x="430" y="250">Collection of Java projects</text></g>
-<g class="row" style="animation-delay:0.85s"><text class="m" x="48" y="284">❯</text><text class="v" x="66" y="284" font-weight="700">Patterns</text><circle cx="326" cy="279" r="5" fill="#ED8B00"/><text class="m" x="338" y="284">Java</text><text class="v" x="430" y="284">Number patterns in Java</text></g>
+.ch{animation:on .01s linear both}
+.rise{animation:rise .6s ease-out both}
+@keyframes ring{from{stroke-dashoffset:113}to{stroke-dashoffset:28}}.ring{animation:ring 1.6s ease-out both}</style>
+<rect x="4" y="4" width="912" height="466" rx="18" fill="#0a0f1c"/>
+<g clip-path="url(#cc)">
+<ellipse class="b1" cx="180" cy="20" rx="260" ry="213" fill="url(#gb)"/>
+<ellipse class="b2" cx="552" cy="142" rx="280" ry="237" fill="url(#gg)"/>
+<ellipse class="b1" cx="414" cy="474" rx="300" ry="142" fill="url(#gp)"/>
+<ellipse class="b2" cx="880" cy="356" rx="180" ry="190" fill="url(#gt)"/>
+</g>
+<rect x="4" y="4" width="912" height="466" rx="18" fill="none" stroke="url(#bd)" stroke-width="1.4"/>
+<text class="lbl" x="36" y="44">PROJECTS.LIST</text><text class="m" x="190" y="44" fill="#475569" style="fill:#475569">~/repos/backend --all</text><text class="m" x="884" y="44" text-anchor="end" style="fill:#475569">5 projects</text>
+<g class="rise" style="animation-delay:0.20s">
+<rect x="28" y="62" width="424" height="112" rx="12" fill="#060a14" fill-opacity=".7" stroke="#38bdf8" stroke-opacity=".25"/>
+<text x="42" y="82" font-size="10" fill="#64748b">▸ microservices</text><circle cx="438" cy="78" r="3" fill="#10b981"/>
+<text x="42" y="106" font-size="15" font-weight="800" fill="#f1f5f9">microservices <tspan class="cur" fill="#22d3ee">_</tspan></text>
+<text x="42" y="126" font-size="11.5" fill="#94a3b8">Spring Boot microservices</text>
+<rect x="42" y="138" width="42" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="50" y="151" font-size="10" fill="#7dd3fc">java</text>
+<rect x="90.4" y="138" width="89" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="98.4" y="151" font-size="10" fill="#7dd3fc">spring-boot</text>
+<rect x="185.0" y="138" width="102" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="193.0" y="151" font-size="10" fill="#7dd3fc">microservices</text>
+<circle cx="408" cy="122" r="18" fill="none" stroke="#1e293b" stroke-width="4"/>
+<circle class="ring" style="animation-delay:0.50s" cx="408" cy="122" r="18" fill="none" stroke="#ED8B00" stroke-width="4" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="28" transform="rotate(-90 408 122)"/>
+<text x="408" y="126" text-anchor="middle" font-size="10" font-weight="800" fill="#e2e8f0">JV</text></g>
+<g class="rise" style="animation-delay:0.35s">
+<rect x="468" y="62" width="424" height="112" rx="12" fill="#060a14" fill-opacity=".7" stroke="#38bdf8" stroke-opacity=".25"/>
+<text x="482" y="82" font-size="10" fill="#64748b">▸ microservices-config</text><circle cx="878" cy="78" r="3" fill="#10b981"/>
+<text x="482" y="106" font-size="15" font-weight="800" fill="#f1f5f9">microservices-config <tspan class="cur" fill="#22d3ee">_</tspan></text>
+<text x="482" y="126" font-size="11.5" fill="#94a3b8">Centralized config for the microservices</text>
+<rect x="482" y="138" width="95" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="490" y="151" font-size="10" fill="#7dd3fc">spring-cloud</text>
+<rect x="583.2" y="138" width="56" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="591.2" y="151" font-size="10" fill="#7dd3fc">config</text>
+<circle cx="848" cy="122" r="18" fill="none" stroke="#1e293b" stroke-width="4"/>
+<circle class="ring" style="animation-delay:0.65s" cx="848" cy="122" r="18" fill="none" stroke="#6DB33F" stroke-width="4" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="28" transform="rotate(-90 848 122)"/>
+<text x="848" y="126" text-anchor="middle" font-size="10" font-weight="800" fill="#e2e8f0">CFG</text></g>
+<g class="rise" style="animation-delay:0.50s">
+<rect x="28" y="190" width="424" height="112" rx="12" fill="#060a14" fill-opacity=".7" stroke="#38bdf8" stroke-opacity=".25"/>
+<text x="42" y="210" font-size="10" fill="#64748b">▸ multiple-datasource</text><circle cx="438" cy="206" r="3" fill="#10b981"/>
+<text x="42" y="234" font-size="15" font-weight="800" fill="#f1f5f9">multiple-datasource <tspan class="cur" fill="#22d3ee">_</tspan></text>
+<text x="42" y="254" font-size="11.5" fill="#94a3b8">Spring Boot app with multiple data sources</text>
+<rect x="42" y="266" width="42" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="50" y="279" font-size="10" fill="#7dd3fc">java</text>
+<rect x="90.4" y="266" width="89" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="98.4" y="279" font-size="10" fill="#7dd3fc">spring-boot</text>
+<rect x="185.0" y="266" width="82" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="193.0" y="279" font-size="10" fill="#7dd3fc">datasource</text>
+<circle cx="408" cy="250" r="18" fill="none" stroke="#1e293b" stroke-width="4"/>
+<circle class="ring" style="animation-delay:0.80s" cx="408" cy="250" r="18" fill="none" stroke="#ED8B00" stroke-width="4" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="28" transform="rotate(-90 408 250)"/>
+<text x="408" y="254" text-anchor="middle" font-size="10" font-weight="800" fill="#e2e8f0">JV</text></g>
+<g class="rise" style="animation-delay:0.65s">
+<rect x="468" y="190" width="424" height="112" rx="12" fill="#060a14" fill-opacity=".7" stroke="#38bdf8" stroke-opacity=".25"/>
+<text x="482" y="210" font-size="10" fill="#64748b">▸ java-projects</text><circle cx="878" cy="206" r="3" fill="#10b981"/>
+<text x="482" y="234" font-size="15" font-weight="800" fill="#f1f5f9">Java-Projects <tspan class="cur" fill="#22d3ee">_</tspan></text>
+<text x="482" y="254" font-size="11.5" fill="#94a3b8">Collection of Java projects</text>
+<rect x="482" y="266" width="42" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="490" y="279" font-size="10" fill="#7dd3fc">java</text>
+<circle cx="848" cy="250" r="18" fill="none" stroke="#1e293b" stroke-width="4"/>
+<circle class="ring" style="animation-delay:0.95s" cx="848" cy="250" r="18" fill="none" stroke="#ED8B00" stroke-width="4" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="28" transform="rotate(-90 848 250)"/>
+<text x="848" y="254" text-anchor="middle" font-size="10" font-weight="800" fill="#e2e8f0">JV</text></g>
+<g class="rise" style="animation-delay:0.80s">
+<rect x="28" y="318" width="424" height="112" rx="12" fill="#060a14" fill-opacity=".7" stroke="#38bdf8" stroke-opacity=".25"/>
+<text x="42" y="338" font-size="10" fill="#64748b">▸ patterns</text><circle cx="438" cy="334" r="3" fill="#10b981"/>
+<text x="42" y="362" font-size="15" font-weight="800" fill="#f1f5f9">Patterns <tspan class="cur" fill="#22d3ee">_</tspan></text>
+<text x="42" y="382" font-size="11.5" fill="#94a3b8">Number patterns in Java</text>
+<rect x="42" y="394" width="42" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="50" y="407" font-size="10" fill="#7dd3fc">java</text>
+<rect x="90.4" y="394" width="49" height="18" rx="9" fill="#1e293b" stroke="#38bdf8" stroke-opacity=".3"/><text x="98.4" y="407" font-size="10" fill="#7dd3fc">logic</text>
+<circle cx="408" cy="378" r="18" fill="none" stroke="#1e293b" stroke-width="4"/>
+<circle class="ring" style="animation-delay:1.10s" cx="408" cy="378" r="18" fill="none" stroke="#ED8B00" stroke-width="4" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="28" transform="rotate(-90 408 378)"/>
+<text x="408" y="382" text-anchor="middle" font-size="10" font-weight="800" fill="#e2e8f0">JV</text></g>
+<g class="rise" style="animation-delay:0.95s"><rect x="468" y="318" width="424" height="112" rx="12" fill="none" stroke="#38bdf8" stroke-opacity=".25" stroke-dasharray="5 5"/><text x="680.0" y="379.0" text-anchor="middle" font-size="13" fill="#38bdf8">+ more on github.com/Vishnubkrishna5329</text></g>
 </svg>
